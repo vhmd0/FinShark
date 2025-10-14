@@ -24,6 +24,7 @@ if (app.Environment.IsDevelopment())
         .WithDarkMode());
 }
 
+
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
