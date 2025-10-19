@@ -1,4 +1,3 @@
-using finshark.Dtos;
 using finshark.Model;
 
 namespace finshark.Interfaces
@@ -8,7 +7,6 @@ namespace finshark.Interfaces
         Task<List<Stock>> GetAllAsync();
         Task<Stock?> GetByIdAsync(Guid id);
         Task<Stock> CreateAsync(Stock stockModel);
-        Task<Stock?> UpdateAsync(Guid id, UpdateStockRequestDto stockDto);
-        Task<Stock?> DeleteAsync(Guid id);
+        void Delete(Stock stockModel);
     }
 }
