@@ -19,7 +19,7 @@ internal class Program
         builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(connectionString, o => o.CommandTimeout(60)));
 
-        builder.Services.AddScoped<IStockRepository, StockRepository>();
+        builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         builder.Services.AddScoped<IStockService, StockService>();
 
         var app = builder.Build();
