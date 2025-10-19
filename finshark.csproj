@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
@@ -21,11 +21,13 @@
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
         <PackageReference Include="Riok.Mapperly" Version="4.2.1" />
         <PackageReference Include="Scalar.AspNetCore" Version="2.8.11" />
+        <PackageReference Include="Delta" Version="6.4.4" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Controllers\" />
       <Folder Include="Interfaces\" />
+      <Folder Include="Security\" />
     </ItemGroup>
 
 </Project>
